@@ -9,9 +9,9 @@ numpy
 
 ## Datasets
 There are five files in `data/` directory.
-- click0.csv: user-clicked training set.
-- click1.csv: user-unclicked training set.
-- test.csv: testing set.
+- click0.csv: Desensitized user-clicked training subdataset.
+- click1.csv: Desensitized user-unclicked training subdataset.
+- test.csv: Desensitized testing set.
 - vocab_gan.txt: Word list by word frequency statistics.
 
 File format of "click0.csv", "click1.csv" and "test.csv":id, item_id, if_click, long_title, short_title, short_title_position_index, user_feature.
