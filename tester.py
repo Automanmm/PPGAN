@@ -30,7 +30,7 @@ FLAGS = tf.app.flags.FLAGS
 
 
 def main(args):
-    validSet = Loader(os.path.join(FLAGS.data_dir, 'train_1.csv'), FLAGS.vocab_path,
+    validSet = Loader(os.path.join(FLAGS.data_dir, 'test.csv'), FLAGS.vocab_path,
                       FLAGS.pn_batch_size, FLAGS.ctr_batch_size, FLAGS.seq_length)
     G = Generator()
     G(validSet.vocab_size)
